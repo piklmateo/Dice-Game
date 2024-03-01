@@ -348,7 +348,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: auto; /* Push the footer to the bottom */
+    margin-top: auto;
 }
 
 @keyframes shake {
@@ -363,11 +363,6 @@ body {
     animation: shake 0.5s ease-in-out;
 }
 
-/* Desktop styles */
-
-/* Your existing styles go here */
-
-/* Tablet styles */
 @media screen and (max-width: 768px) {
     
     .wrapper-heading {
@@ -414,6 +409,12 @@ body {
     .wrapper-footer {
         margin-top: 5rem;
     }
+
+    .btn {
+        padding-block: 14px;
+        padding-inline: 25px;
+        font-size: 0.9rem;
+    }
 }
 
 /* Mobile styles */
@@ -448,8 +449,8 @@ body {
     }
 
     .btn {
-        padding-block: 8px;
-        padding-inline: 20px;
+        padding-block: 14px;
+        padding-inline: 25px;
         font-size: 0.9rem;
     }
 
