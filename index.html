@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dice Game - Mateo</title>
+</head>
+<body>
+    
+    <header>
+        <div class="wrapper-heading">
+            <img class="flag" src="./assets/images/flag.png" alt="flag">
+            <h1 class="heading">Dice Game</h1>
+            <h1 class="result-1 hidden">Player 1 wins</h1>
+            <h1 class="result-2 hidden">Player 2 wins</h1>
+            <h1 class="result-3 hidden">Draw</h1>
+            <img class="flag" src="./assets/images/flag.png" alt="flag">
+            <h1 class="result"></h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="wrapper-dice">
+                <div class="split-dice">
+                    <h2 class="player-name">Player 1</h2>
+
+                    <div class="left-dice-1 hidden">
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="left-dice-2 hidden">
+                        <div id="left-dice-two-grid-item" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="left-dice-two-grid-item-2" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="left-dice-3 hidden">
+                        <div id="left-dice-three-grid-item" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="left-dice-three-grid-item-2" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="left-dice-three-grid-item-3" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="left-dice-4 hidden">
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="left-dice-5 hidden">
+                        <div id="left-dice-five-grid-item" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="left-dice-five-grid-item-2" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="left-dice-five-grid-item-3" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="left-dice-five-grid-item-4" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="left-dice-five-grid-item-5" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="left-dice-6">
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="split-dice">
+                    <h2 class="player-name">Player 2</h2>
+
+                    <div class="right-dice-1 hidden">
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-dice-2 hidden">
+                        <div id="right-dice-two-grid-item" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="right-dice-two-grid-item-2" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-dice-3 hidden">
+                        <div id="right-dice-three-grid-item" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="right-dice-three-grid-item-2" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="right-dice-three-grid-item-3" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-dice-4 hidden">
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-dice-5 hidden">
+                        <div id="right-dice-five-grid-item" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="right-dice-five-grid-item-2" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="right-dice-five-grid-item-3" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="right-dice-five-grid-item-4" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div id="right-dice-five-grid-item-5" class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-dice-6">
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                        <div class="dice-flex">
+                            <div class="dice-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-btn"><button id="btn" class="btn">Play</button></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper-footer">
+            <p>&copy; Mateo Pikl</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
